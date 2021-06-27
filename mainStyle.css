@@ -1,0 +1,302 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition:0.5s ;
+    padding: 20px 30px;
+
+    
+}
+
+
+header .logo
+{
+    color: white;
+    text-decoration: none;
+    font-weight:100 ;
+    font-size: 1.4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header .logo span
+{
+    color: yellow;
+}
+header .navigation
+{
+   
+    position: relative;
+    display:flex;
+}
+header .navigation-after
+{
+    position: relative;
+    display:flex;
+}
+header .navigation-after li
+{
+    list-style: none;
+    margin-left: 18px; 
+
+}
+header .navigation-after li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    display: inline-block;
+    font-weight: 100;
+}
+.nav-link::after
+{
+  content:'';
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width .3s;
+  background: orange;
+
+}
+.nav-link:hover::after
+{
+    width: 100%;
+    transition: width .3s;
+
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 18px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: 100;
+}
+.banner
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to bottom,#362e3248,#1f1e1e),url('../drawables/chanco.jpg');
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 104vh;
+
+
+
+}
+.slider
+{
+    
+}
+.banner .content
+{
+    padding-top: 24vmin;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  
+
+}
+.banner .content h1
+{
+
+
+    font-size: 2.4rem;
+   
+    color: rgb(240, 182, 68);
+    
+}
+.banner .content #para
+{
+    
+    text-align: start;
+    color: #ffa500;
+    padding-left: 10px;
+}
+.banner .content .btn
+{
+    margin-top: 12px;
+    padding: 12px;
+    background: white;
+    background-clip: padding-box;
+    
+}
+.banner .content .btn img
+{
+    padding-bottom: 2px;
+}
+
+.banner .content p
+{
+    padding-top: 12px;
+    color: white;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0px 2px 15px 0px rga (0 0 0 0.2);
+    z-index: 1;
+}
+.dropdown-content a
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown-content a:hover
+{
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content
+{
+   display: block;
+}
+.section-2 
+{
+    
+    height: 70vmin;
+    margin-top: 15vmin;
+}
+.section-2 .content
+{
+    padding-left: 12px;
+}
+.section-2 .content span
+{
+    color: black;
+}
+.section-2 .content h4
+{
+    color: orange;
+    padding-top: 1px;
+    padding-left: 12px;
+}
+.section-2 .content h5
+{
+
+padding-left: 12px;
+}
+.section-2 .content h4::after
+{
+    content: '';
+    height: 3px;
+    display: inline-block;
+    width: 4vw;
+    background: black;
+    transform: translateX(-400px) translatey(20px);
+    
+
+}
+.section-2 .content p
+{
+    margin-top: 4vmin;
+    padding-left: 12px;
+}
+.section-2 .content-col img
+{
+    width: 55%;
+   height: 49vmin;
+    
+    
+}
+.section-2 .content-col h5
+{
+    text-align: center;
+
+}
+.section-2 .content-col p
+{
+    text-align: center;
+}
+.section-3
+{
+    background: url(../drawables/towmasjid2.jpg) no-repeat center center fixed;
+    height: 70vmin;
+    display: table;
+    background-size: cover;
+    position: relative;
+
+}
+.section-3 h1
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

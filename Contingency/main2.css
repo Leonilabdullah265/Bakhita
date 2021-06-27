@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #ba7453, #d1a984);
+  z-index: -1;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+}
+#logo {
+  grid-column: 2/3;
+}
+.hamburger {
+  justify-self: end;
+}
+.section {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.btn {
+  position: absolute;
+
+  top: 90%;
+  left: 10%;
+  z-index: 3;
+}
+
+.headline {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  top: 54%;
+  left: 10%;
+  transform: translate(-10%, 70%);
+  z-index: 3;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+.line {
+  line-height: 8px;
+}
+.square {
+  width: 12px;
+  height: 12px;
+  background: #d1a984;
+  display: inline-block;
+  margin: 15px 0;
+}
+.line-1 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #d1a984;
+}
+.line-2 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #d1a984;
+}
+.line-3 {
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  background: #d1a984;
+}
+#about {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-left-col {
+  flex-basis: 50%;
+}
+.about-left-col img {
+  min-height: 200px;
+  max-width: 400px;
+  margin-left: 100px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 50px 0px #d1a984;
+}
+.about-right-col {
+  flex-basis: 50%;
+  text-align: right;
+}
+.about-text {
+  display: inline-block;
+  margin-right: 100px;
+  max-width: 500px;
+}
+#section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 120vh;
+  padding: 40px 0;
+}
+#section4 .drawables-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#section4 .drawables-container img {
+  position: absolute;
+  width: 420px;
+  align-self: center;
+  height: 540px;
+  border-radius: 4px;
+}
+#section4 .details-right-col {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#section4 .details-right-col p {
+  position: absolute;
+  padding: 4px;
+  margin-top: 40px;
+}
+#section4 .details-right-col #lorem {
+  position: absolute;
+  padding: 14px;
+  margin-top: 280px;
+  left: 2%;
+}
+#section4 .details-right-col h1 {
+  position: absolute;
+  margin-top: 80px;
+  padding: 12px;
+  left: 2%;
+}
+#section4 .details-right-col .line-choose {
+  line-height: 8px;
+  position: absolute;
+}
+#section4 .details-right-col .line-choose .line-2 {
+  padding: 1px;
+  margin-top: 69px;
+  background: red;
+}
+#section4 .details-right-col .choosers {
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  left: 4%;
+  height: 100px;
+  position: relative;
+  bottom: 10%;
+}
+#section4 .details-right-col .choosers .div2 {
+  width: 140px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  background: rgb(211, 103, 25);
+  background: url(../drawables/calculator_50px.png) no-repeat center;
+  justify-content: center;
+  text-align: center;
+}
+#section4 .details-right-col .choosers .div2 p {
+  position: absolute;
+  top: 30%;
+  align-self: center;
+}
+#section4 .details-right-col .choosers .div3 {
+  width: 100px;
+  position: absolute;
+  height: 100px;
+  left: 40%;
+  display: flex;
+  text-align: center;
+  background: url(../drawables/classroom_50px.png) no-repeat center;
+}
+#section4 .details-right-col .choosers .div3 p {
+  position: absolute;
+  top: 30%;
+  align-self: center;
+}
+#section4 .details-right-col .choosers .div4 {
+  width: 130px;
+  position: absolute;
+  height: 100px;
+  left: 70%;
+  display: flex;
+  text-align: center;
+  background: url(../drawables/book_shelf_filled_50px.png) no-repeat center;
+}
+#section4 .details-right-col .choosers .div4 p {
+  position: absolute;
+  top: 30%;
+  align-self: center;
+}
+
+#section4 .drawables-container #overlap {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 3%;
+  left: 7%;
+  background: #ba7453;
+  display: flex;
+  justify-content: center;
+}
+#section4 .drawables-container #overlap .image-contain {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  background: url(../drawables/student_female_filled_60px.png) no-repeat center;
+}
+.div1 {
+  width: 100%;
+  height: 80vh;
+  background: url(../drawables/pexels-photo-4844208.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.div1::after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.cards_wrap {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards_wrap .cards_item {
+  padding: 15px 25px;
+  width: 25%;
+}
+.cards_wrap .card_inner {
+  border-radius: 150px;
+  margin-top: 6vh;
+  padding: 35px 125px;
+  min-width: 250px;
+  background: #ba7453;
+  min-height: 250px;
+  width: 100%;
+}
+.cards_wrap .card_inner1 {
+  margin-top: 14vh;
+  display: flex;
+  background: #d1a984;
+  border-radius: 150px;
+  justify-content: center;
+  position: relative;
+  min-width: 300px;
+  text-align: center;
+  min-height: 300px;
+  width: 100%;
+}
+.cards_wrap .card_inner1 img {
+  align-self: center;
+  position: absolute;
+}
+.cards_wrap .card_inner1 h3 {
+  position: absolute;
+  top: 70%;
+  color: white;
+}
+.cards_wrap .card_inner2 {
+  margin-top: 14vh;
+  background: white;
+  border-radius: 150px;
+  padding: 35px 20px;
+  min-width: 300px;
+  min-height: 300px;
+  background: #d1a984;
+  width: 100%;
+}

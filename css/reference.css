@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #5d5d5d, #d1a984);
+  z-index: -1;
+}
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+}
+#logo {
+  grid-column: 2/3;
+}
+.hamburger {
+  justify-self: end;
+}
+.section {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.btn {
+  position: absolute;
+
+  top: 90%;
+  left: 10%;
+  z-index: 3;
+}
+
+.headline {
+  position: absolute;
+  font-size: 70px;
+  color: white;
+  top: 54%;
+  left: 10%;
+  transform: translate(-10%, 70%);
+  z-index: 3;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+#about {
+  position: relative;
+}
+.line {
+  line-height: 8px;
+}
+
+.square {
+  width: 12px;
+  height: 12px;
+  background: #d2691e;
+  display: inline-block;
+  margin: 15px 0;
+}
+.line-1 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #d2691e;
+}
+.line-2 {
+  width: 80px;
+  height: 1px;
+  display: inline-block;
+  background: #d2691e;
+}
+.line-3 {
+  width: 60px;
+  height: 1px;
+  display: inline-block;
+  background: #d2691e;
+}
+#about {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-left-col {
+  flex-basis: 50%;
+}
+.about-left-col img {
+  min-height: 200px;
+  max-width: 400px;
+  margin-left: 100px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 50px 0px #d1a984;
+}
+.about-right-col {
+  flex-basis: 50%;
+  display: flex;
+  margin: auto;
+  text-align: right;
+}
+.about-text {
+  display: inline-block;
+  margin-right: 100px;
+  max-width: 500px;
+  position: relative;
+  height: 400px;
+}
+.about-right-col .about-text .span {
+  position: absolute;
+
+  align-self: flex-start;
+  right: 12%;
+  top: 11%;
+  width: 200px;
+}
+.about-right-col .about-text .headmistress {
+  position: absolute;
+  top: 95%;
+  right: 14%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 18vh;
+}
+.about-right-col .about-text .headmistress .icon-container {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background: url(../drawables/pexels-max-fischer-5212321.jpg) no-repeat center;
+  background-size: cover;
+}
+.about-right-col .about-text .headmistress p {
+  position: absolute;
+  left: 58%;
+}
+.about-right-col .about-text .headmistress h3 {
+  position: absolute;
+  left: 62%;
+  top: 30%;
+  font-size: 19px;
+}
+.div1 {
+  width: 100%;
+  height: 80vh;
+  background: url(../drawables/pexels-photo-4844208.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.div1::after {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.div1 .card_item {
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  height: 360px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  background: #d2691e;
+}
+.div1 .card_item .card_inner1 {
+  position: absolute;
+  border-radius: 90px;
+  background: white;
+  height: 180px;
+  align-self: center;
+  width: 180px;
+  justify-content: center;
+  display: flex;
+  left: 16%;
+  text-align: center;
+}
+.div1 .card_item .card_inner1 img {
+  align-self: center;
+}
+.div1 .card_item .card_inner1 P {
+  position: absolute;
+  align-self: center;
+  top: 60%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+.div1 .card_item .card_inner2 {
+  position: absolute;
+  border-radius: 90px;
+  background: white;
+  height: 180px;
+  align-self: center;
+  width: 180px;
+  left: 33%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.div1 .card_item .card_inner2 img {
+  align-self: center;
+}
+.div1 .card_item .card_inner2 p {
+  position: absolute;
+  top: 60%;
+  font-size: 15px;
+}
+.div1 .card_item .card_inner3 {
+  position: absolute;
+  border-radius: 90px;
+  background: white;
+  height: 180px;
+  align-self: center;
+  width: 180px;
+  left: 50%;
+  justify-content: center;
+  display: flex;
+}
+.div1 .card_item .card_inner3 img {
+  align-self: center;
+}
+.div1 .card_item .card_inner4 {
+  position: absolute;
+  border-radius: 90px;
+  background: white;
+  height: 180px;
+  align-self: center;
+  width: 180px;
+  left: 67%;
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+.div1 .card_item .card_inner4 img {
+  align-self: center;
+}
+#section4 {
+  height: 120vh;
+  padding: 100px 100px 100px 100px;
+}
+#section4 .div-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#section4 .drawables-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#section4 .drawables-container #overlap {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -10%;
+  left: 4%;
+  background: #ba7453;
+  display: flex;
+  justify-content: center;
+}
+#section4 .drawables-container #overlap .image-contain {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  background: url(../drawables/student_female_filled_60px.png) no-repeat center;
+}
+#section4 .drawables-container #overlap p {
+  color: white;
+  top: 70%;
+  position: absolute;
+}
+#section4 .drawables-container #overlap h1 {
+  position: absolute;
+  color: white;
+  align-self: flex-end;
+  font-size: 19px;
+}
+#section4 .drawables-container img {
+  width: 400px;
+  align-self: center;
+  height: 540px;
+}
+#section4 .details-right-col {
+  display: flex;
+  position: relative;
+}
+#section4 .details-right-col #choose-text {
+  position: absolute;
+  top: -2%;
+  left: 20%;
+}
+#section4 .details-right-col .line-choose {
+  position: absolute;
+  left: 48%;
+  top: -3%;
+}
+#section4 .details-right-col .line-choose .line-2 {
+  height: 2px;
+}
+#section4 .details-right-col h1 {
+  position: absolute;
+  font-size: 35px;
+  left: 20%;
+  top: 10%;
+}
+#section4 .details-right-col #lorem {
+  position: absolute;
+  left: 20%;
+  top: 55%;
+}
+#section4 .details-right-col .choosers {
+  width: 100%;
+  left: 4%;
+  top: 68%;
+  height: 100px;
+  position: relative;
+}
+#section4 .details-right-col .choosers .div2 {
+  width: 140px;
+  height: 100px;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background: url(../drawables/cheap.png) no-repeat center;
+  text-align: center;
+}
+#section4 .details-right-col .choosers .div2 p {
+  position: absolute;
+  top: 64%;
+  padding: 13px;
+  font-size: 14px;
+}
+#section4 .details-right-col .choosers .div3 {
+  width: 140px;
+  height: 100px;
+  left: 40%;
+  position: absolute;
+  background: url(../drawables/classroom_50px.png) no-repeat center;
+  text-align: center;
+}
+#section4 .details-right-col .choosers .div3 p {
+  position: absolute;
+  top: 64%;
+  padding: 13px;
+  font-size: 14px;
+}
+#section4 .details-right-col .choosers .div4 {
+  width: 140px;
+  height: 100px;
+  left: 70%;
+  position: absolute;
+  background: url(../drawables/book_shelf_filled_50px.png) no-repeat center;
+  text-align: center;
+}
+#section4 .details-right-col .choosers .div4 p {
+  position: absolute;
+  top: 64%;
+  padding: 13px;
+  font-size: 14px;
+}
+.section_5 {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../drawables/pexels-photo-4844208.jpeg) no-repeat center;
+  background-size: cover;
+}
+.section_5::after {
+  content: "";
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.section_5 .image_slender {
+  position: absolute;
+  height: 65vh;
+  z-index: 3;
+  width: 600px;
+}
+.section_5 .image_slender h1 {
+  position: relative;
+  left: 34%;
+  top: 4%;
+  color: white;
+  font-size: 45px;
+}
+.section_5 .image_slender .line_section_5 .line_medium {
+  position: absolute;
+  z-index: 3;
+  background: #d2691e;
+  height: 3px;
+  top: 16%;
+  left: 35%;
+  width: 200px;
+}
+
+.section_5 .image_slender .vision_container {
+  position: relative;
+  height: 250px;
+  z-index: 3;
+  left: 8.5%;
+  top: 8%;
+  width: 500px;
+  background: white;
+  padding: 0px 0px 0px 30px;
+}
+.section_5 .image_slender .vision_container img {
+  position: relative;
+  left: -3%;
+  bottom: -12%;
+  opacity: 0.2;
+}
+.section_5 .image_slender .vision_container h4 {
+  position: relative;
+  font-size: 27px;
+  padding: 4px 4px 4px 4px;
+}
+.section_5 .image_slender .vision_container .teach {
+  position: relative;
+  padding: 4px 0px 4px 4px;
+  top: 6%;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #d2691e;
+}
+.section_5 .image_slender .vision_container .head {
+  position: relative;
+  font-size: 12px;
+  bottom: 4%;
+  color: gray;
+  font-style: inherit;
+  padding: 4px 0px 4px 4px;
+}
+.section_6 {
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+.section_6 .container {
+  padding-top: 12px;
+}
+.section_6 .container h1 {
+  color: black;
+}
+
+.section_6 .container p {
+  color: chocolate;
+  position: relative;
+}
+
+.section_6 .alumni_div {
+  position: relative;
+  padding: 1vmin 4vmin;
+}
+
+.section_6 .alumni_div .card_column_1 {
+  padding-top: 4vmin;
+  position: relative;
+  width: 22rem;
+  margin-left: 4vmin;
+  background: whitesmoke;
+  left: 10%;
+}
+.section_6 .alumni_div .card_column_2 {
+  padding-top: 4vmin;
+  position: relative;
+  width: 22rem;
+  background: whitesmoke;
+  margin-left: 4vmin;
+}
+.section_6 .alumni_div .card_column_3 {
+  padding-top: 4vmin;
+  position: relative;
+  width: 22rem;
+  background: whitesmoke;
+  margin-left: 4vmin;
+  right: 10%;
+}
+
+.section_6 .alumni_div .card_column_1 .card-img-top img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.section_6 .alumni_div .card_column_2 .card-img-top img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.section_6 .alumni_div .card_column_3 .card-img-top img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.section_6 .alumni_div .card-body img {
+  width: 20px;
+  height: 20px;
+}
+.section_6 .alumni_div .card-body .card-minor-title {
+  color: #ba7453;
+}
+.section_7 {
+  padding-top: 12px;
+  background: chocolate;
+  height: 24vh;
+  overflow-x: hidden;
+}
+
+.section_7 .row .segment-one {
+  padding-top: 30px;
+}
+.section_7 .segment-one h3 {
+  color: white;
+}
+.section_7 .segment-one h5 {
+  color: white;
+}
+
+.section_7 .segment-two {
+  padding-top: 30px;
+}
+.section_7 .segment-two h5 {
+  color: white;
+  padding-left: 14px;
+}
+.section_7 .segment-two .col .input-group .send {
+  padding: 10px 10px;
+  position: relative;
+  color: chocolate;
+  left: 40%;
+}
+.section_8 {
+  height: 14vh;
+  background: white;
+}
+.footer-top {
+  height: 24vh;
+  background: chocolate;
+}
+.footer-top .row .segment-first {
+  padding-top: 30px;
+}
+.footer-top .row .segment-first h2 {
+  color: white;
+}
+.footer-top .row .segment-second {
+  padding-top: 30px;
+}
+.footer-top .row .segment-second h2 {
+  color: white;
+}
+.footer-top .row .segment-second ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top .row .segment-second ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-top .row .segment-third {
+  padding-top: 30px;
+}
+.footer-top .row .segment-third h2 {
+  color: white;
+}
+.footer-top .row .segment-third ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top .row .segment-third ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-top .row .segment-third ul li img {
+  padding: 0px 10px 0px 10px;
+}
